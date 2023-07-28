@@ -61,6 +61,13 @@
 }
 
 
+#experience .modal-dialog {
+
+display: inline-block;
+text-align: left;
+vertical-align: middle;
+}
+
 #projects .modal-dialog {
   display: inline-block;
   text-align: left;
@@ -146,6 +153,14 @@
 }
 
 #education {
+  background: url(utd.jpg); 
+        background-repeat:no-repeat;
+        background-size:cover;
+
+}
+
+
+#experience {
   background: url(utd.jpg); 
         background-repeat:no-repeat;
         background-size:cover;
@@ -316,6 +331,7 @@ h6, h4 {
    </div>
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-primary btn-lg raised" data-toggle="modal" data-target="#about">About</button>
+  <button type="button" class="btn btn-primary btn-lg raised" data-toggle="modal" data-target="#experience">Experience</button>
   <button type="button" class="btn btn-primary btn-lg raised" data-toggle="modal" data-target="#education">Education</button>
   
 
@@ -506,10 +522,9 @@ h6, h4 {
 
 
 
-<div class="modal fade" id="education" role="dialog">
+<div class="modal fade" id="Experience" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
@@ -532,9 +547,34 @@ h6, h4 {
       
     </div>
   </div>
-<!-- 
-/react div
- -->
+
+
+  <div class="modal fade" id="experience" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Experience</h4>
+        </div>
+        <div class="modal-body">
+          <p style="font-weight: bold">Cloud Software Engineer @Braincorp, scaling autonous robots</p>
+          <ul>
+          <li>Dec 2019 - Present</li>
+          </ul>
+          <p style="font-weight: bold">Software Engineer in Platforms @ Microstrategy. maiking enterise BI reporting easy </p>
+          <ul>
+          <li>Feb 2017 - Dec 2019 </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 <div>
     <div id="mood-container" />
 </div>
