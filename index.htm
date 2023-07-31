@@ -343,7 +343,7 @@ h6, h4 {
         <div class="modal-body">
           <p>
               I am Software professional 💻 interesed in various aspects of tech. I 💕 coding in Golang <img src="https://emoji.slack-edge.com/T02EPF0AV/dance_gopher/bf4e42d56f133278.gif" alt="Trulli" width="25" height="25"> for the simplicty and power it brings to the apps and infra. 
-              At my current job I am are scaling robots 🤖 everyday on cloud. When I am not working, I am organizing and playing ⚽️ 🏃 🏀  tournaments </p>
+              At my current job I am are scaling robots 🤖 everyday on cloud and implementing infrastructure. When I am not working, I am organizing and playing ⚽️ 🏃 🏀  tournaments </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -418,10 +418,10 @@ h6, h4 {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4 class="modal-title">Sunny San Diego</h4>
+          <h4 class="modal-title">San Diego</h4>
         </div>
         <div class="modal-body">
-          <p style="text-align: center">Hybrid or Remote jobs</p>
+          <p style="text-align: center">Looking for remote jobs or places near San Diego</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -440,36 +440,36 @@ h6, h4 {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4 class="modal-title">Projects!</h4>
+          <h4 class="modal-title">Recent work projects!</h4>
         </div>
         <div class="modal-body">
-            <p style="font-weight: bold">Distributed Systems Framework (Java and Bash /TCP):</p>
+            <p style="font-weight: bold">Salefesforce Integrations</p>
             <ul>
-                <li>Implemented message passing framework in JAVA using multi-threading</li>
-                <li>Maekawa’s Quorum based Mutex protocol to avoid deadlocks</li>
+                <li>Golang code for buisness teams to send notifications to cloud/robots to enable features for licensesd products</li>
+                <li>Design Salesforce asset models into defined schemas, consumers react on new robots added and subscription changes</li>
+                <li>Unit Tests and e2e tests for developing, testing and intergrating </li>
+                <li>Pub/Sub based architecture into messages multiple queues, proto struct for schemas </li>
             </ul>
-            <p style="font-weight: bold">Toy Language Compiler (C and C++):</p>
+            <p style="font-weight: bold">Multi cloud uploads</p>
             <ul>
-                <li> Used flex and yacc (bison) to make three phases of complier</li>
-                <li> Tokenizing, AST generation for the language and machine code generation for a toy-language.</li>
+                <li>Server side changes for device to code realtime changes pushed down to robots, upload to different clouds</li>
+                <li>Extensible transfer profiles configuration for supporting diffrent auth options into federated ADs</li>
+                <li>Webhook service to indicate image uploads were succesfull and metrics around 5xx </li>
             </ul>
-            <p style="font-weight: bold"> Implementation of Algorithms & Data-Structures (Java):</p>
+            <p style="font-weight: bold">OTA updates</p>
             <ul>
-                <li> Implemented Skip Lists for fast searches</li>
-                <li>Amazon Market Place (with careful usage in-built data-structures for optimization)</li>
-                <li> Indexed Priority Queues using Prim’s algorithm</li>
-                <li> finding critical paths in PERT graphs & dynamic programming solution for Tug-of-war problem.</li>
+              <li> Golang Api's for implementing crud operations using presinged urls, uploading ~4GB images and activating releases</li>
+              <li> Write down translators for getting the releases on Robot side code forflashing images and activating partitions </li>
+              <li> Stateful kubernetes app defined using pulumi typescript sdks; xdelta tooling for calulating patches saving LTE costs</li>
             </ul>
-            <p style="font-weight: bold"> Resource Virtualization (Python, Bash, Virsh):</p>
+            <p style="font-weight: bold">Infrastructure as code</p>
             <ul>
-                <li>KVM creation using Virsh, simulated Google workload by parsing the Google cluster data for the guest machines using Python, monitored the workload and algorithm that dynamically migrates the VM based on the monitoring statistics.
-                <li> Dynamic decisions to migrate a VM, based on 3 metrics: CPU usage, memory usage threshold and disk utilization </li>
-            </ul>
-
-            <p style="font-weight: bold">UTD Comet Cruiser (Java, Python, Flask):
-            <ul>
-            <li>Developed an android app to initiate connections with the Amazon Web Services (AWS) and synchronizing data between the laptop, mobile and the EC2 (server) instance, using socket programming in Java.</li>
-            <li>Implemented a UTD shuttle tracking android application, posting the co-ordinates of bus on the server (flask) periodically and the client fetching the co-ordinates of the server when required. Used Object Oriented GRASP patterns in the app for adding new routes.</li>
+              <li>Implement terraform modules for creating elasticsearch, cloudwatch alarms, eks cluster components</li>
+              <li>Prometheus for metrics and jaeger for tracing on Elasticsearch</li>
+              <li>Argocd for kustomize and helm charts into multiple k8s clusters</li>  
+              <li>Write Grafana dashboards as code using for critical metrics and setup alerting from Grafana into slack and pagerduty</li>
+              <li>Enable multi instance pipelines, Casc plugins for jenkins and ansible/packer for provisiong ami's </li>
+              <li>Write golang jobs to batch process postgres data and clean up stale s3 date saving 1/2 million/year </li>
             </ul>
         </div>
         <div class="modal-footer">
@@ -492,33 +492,25 @@ h6, h4 {
         </div>
         
         <div class="modal-body">
-
-          <!-- Content -->
-
-          <div class="list-group">
-            
+          <div class="list-group">     
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Braincorp</h5> 
                 <small>Autonomous scrubbing and shelf scanning robots</small>
               </div>
-              <p class="mb-1">Grpc and rest endpoints for the robots, using both AWS and GCP terraform to </p>
-              <small style="font-style: italic;">Golang, Python, Helm, Terraform</small>
+              <p class="mb-1">Endpoints for the autonomous robots and customer facing portal teams, gather data into datbases</p>
+              <small style="font-style: italic;">Golang, Python, Helm, Terraform/Pulumi, AWS/GCP, Argocd</small>
             </a>
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Microstrategy</h5> 
-                <small>Buisness Analytics Tool</small>
+                <small>Buisness Analytics Enterpise</small>
               </div>
-              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-              <small style="font-style: italic;">Golang, Python, Helm, Terraform</small>
+              <p class="mb-1">Distrubution services responsible for sending out reports as email as part of the microstrategy core service, custom hashing for storing web preferences for users</p>
+              <small style="font-style: italic;">Node, Java, Helm, AWS</small>
             </a>
           </div>
-
-
-
         </div>
-
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
